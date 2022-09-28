@@ -8,80 +8,69 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Challenge3</title>
     <style type="text/css">
-        *{
+        *, *::before, *::after
+        {
             box-sizing: border-box;
         }
         body
         {
             margin: 0;
             font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem;
+        }
+        h1
+        {
+            font-size: 3rem;
         }
         .container
         {
             width: 80%;
-            max-width: 750px;
+            max-width: 1000px;
             margin: 0 auto;
-            /* background-color: red; */
-            padding: 5em 0;
-	   
+            /* border: 2px yellow solid; */
         }
-        .wrapper
+        .hero
         {
-            background-color: #23424A ;
-            color: white;
-	    height: 100%;
-
+            padding: 100px 0;
+            background-color: #23424A;
+            color: #FFF;
         }
-        h1
+        .hero__text
         {
-            font-size: 2.1rem;
+            width: 50%;
+            /* border: 1px pink solid; */
         }
-        .subtitle
+        .hero p
         {
-            margin-bottom: 2.5em;
-            font-size: 0.88rem;
-        }
-        .btn a
-        {
-            text-decoration: none;
-            font-size: 0.78rem;
-            font-weight: bold;
-            color: black;
-            padding: 1em;
-            text-align: center;
+            margin-bottom: 3em;
         }
         .btn
         {
-            border: 1px solid none;
-            border-radius: 22px;
-            background-color: #38CFD9 ;
-            text-align: center;
-            padding: 1em;
-            max-width: 170px;
-            
+            display: inline-block;
+            background-color: #38CFD9;
+            padding: .25em 1.25em;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 900;
         }
+        
 
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="hero">
         <div class="container">
-            <div class="main-theme">
+            <div class="hero__text">
                 <h1>Responsive layouts don't have to be a struggle</h1>
-            <div class="subtitle">
-                Lorewm ipsoum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.
-            </div>
+                <p>
+                    Lorewm ipsoum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua, Ut enim ad minim veniam.
+                </p>
+                <a href="#" class="btn">I WANT TO LEARN</a>
             </div>
             
-            <div class="btn">
-                <a href="#">I WANT TO LEARN</a>
-            </div>
-        </div>
-        
+                
             
+        </div>  
     </div>
-    
-   
-    
 </body>
 </html>
